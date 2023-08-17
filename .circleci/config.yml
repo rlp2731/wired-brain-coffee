@@ -4,13 +4,13 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
 
-      steps:
-        - checkout
+    steps:
+      - checkout
 
-        - run:
-          name: Greeting
-          command: echo Hello, world.
+      - run:
+        name: Greeting
+        command: echo Hello, world.
 
-        - run:
-            name: Print the Current Time
-            command: date
+      - run:
+          name: Print the Current Time
+          command: date
